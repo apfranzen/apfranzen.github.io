@@ -8,6 +8,7 @@ img {
 .darker-text {
   font-weight: 300;
   color: #292b2c;
+
 }
 
 p {
@@ -64,4 +65,8 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+.fix {
+  z-index: -1;
 }
