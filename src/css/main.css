@@ -2,8 +2,58 @@
 
 img {
     width: 100%;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.darker-text {
+  font-weight: 300;
+  color: #292b2c;
+}
+
+p {
+  font-weight: 300;
+}
+
+.image-note {
+  font-size: 10px;
+}
+
+.card-title {
+  font-weight: 300;
 }
 
 .subheading {
   margin-top: 8px;
+}
+
+.jumbotron {
+  background-color: #efb85d;
+  border-radius: 0px 0px 3px 3px;
+}
+
+.portfolio-item {
+  height: 550px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: inherit;
+  font-weight: 300;
+ }
+
+.link {
+  width: 100px;
+}
+
+.deployed-btn {
+  margin-left: 18px;
+}
+
+.repo-btn {
+  margin-right: 18px;
+}
+
+.hr-dashed {
+	background-color: #fff;
+	border-top: 2px dashed #8c8b8b;
 }

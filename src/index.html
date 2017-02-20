@@ -1,42 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Adam's Site</title>
-    <!-- styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- title -->
+    <title>Adam Franzen</title>
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-4/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="css/bootstrap-4/narrow-jumbotron.css" rel="stylesheet">
+
+    <!-- Other Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
     <div class="container">
       <div class="header clearfix">
-        <nav>
+        <nav id="nav">
           <ul class="nav nav-pills float-right">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link active" href="#">home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link darker-text" href="adamfranzen.com/#about">about</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link darker-text" href="adamfranzen.com/#portfolio">portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link darker-text" href="adamfranzen.com/#contact">contact</a>
             </li>
           </ul>
         </nav>
-        <h3 class="text-muted">Adam's Site</h3>
+        <div class="col-lg-6">
+          <h2 class="darker-text">Adam Franzen</h2>
+          <h6 class="darker-text">Software Developer</h6>
+        </div>
       </div>
-      <div class="">
-        <img src="assets/img/moto.jpg" alt="">
-        <!-- <h1>test</h1> -->
+      <div id="about">
+        <img src="assets/img/jackson-wy-moto.jpg" alt="jackson-wy-moto">
       </div>
 
-      <div class="jumbotron">
-        <h1 class="display-3">Welcome</h1>
+      <div class="jumbotron about-me">
+        <h1 class="display-3">About</h1>
         <p class="lead">Goal-driven, dedicated and passionate software developer with a desire to work on meaningful projects. A builder at heart, I love tackling complex projects as a team. With 8+ years in the construction industry as a Project Engineer building data centers, hospitals, and custom mountain homes, I have a proven track record of delivering successful projects. Through these experiences, I have gained the experience of breaking complex problems down into their smallest parts and creating modular solutions in a timely and efficient manner.
         <br>
         <br>
@@ -44,52 +55,137 @@
         <br>
         <br>
         In my free-time, you can find me camping off of my motorcycle, cycling, fly fishing, shooting photography, woodworking and cooking.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Get in touch</a></p>
+        <p><a class="btn btn-lg btn-primary" href="file:///Users/adamfranzen/sandbox/personal-site/src/index.html#contact" role="button">Get in touch</a></p>
+        <p class="image-note"><kbd>Photo note:</kbd> Taken near Jackson, WY on the tail-end of 3,400 mile trip from home through Canada.</p>
       </div>
-      <h1 class="text-center">portfolio</h1>
+
+      <h1 class="display-3 text-center" id="portfolio">portfolio</h1>
       <div class="row portfolio">
         <div class="col-lg-6">
-          <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail">
-          <h4 class="subheading text-center">onpoint</h4>
-          <p>A full stack platform for construction companies, built to increase transparency and accuracy on large projects by using WiFi fingerprinting. The user takes a photo on their phone or tablet, and onpoint does the rest, automatically attaching the room the picture was taken in to the picture’s metadata using machine learning.
-          <br>
-          <a href="www.google.com"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
 
-          <a href="www.google.com"><i class="fa fa-rocket" aria-hidden="true"></i> deployed</a>
-          </p>
+          <!-- start onpoint card -->
+          <div class="card portfolio-item" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/onpoint_ss.png" alt="Card image cap">
+            <div class="card-block">
+              <h1 class="card-title">onpoint</h1>
+              <p class="card-text">A full stack platform for construction companies, built to increase transparency and accuracy on large projects by using WiFi fingerprinting. The user takes a photo on their phone or tablet, and onpoint does the rest, automatically attaching the room the picture was taken in to the picture’s metadata using machine learning.</p>
 
-          <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail">
-          <h4 class="subheading text-center">Anglers</h4>
-          <p>Anglers across Colorado now have the ability to view current fishing conditions including weather and river flow as well as leave tips for fellow anglers.</p>
+              <!-- project link btns -->
+              <div class="row">
+                <div class="col-lg-6 text-left">
+                  <a href="http://adamfranzen.com/onpoint" class="btn btn-outline-primary btn-sm link deployed-btn">
+                    <i class="fa fa-rocket" aria-hidden="true"></i>
+                    deployed
+                  </a>
+                </div>
+                <div class="col-lg-6 text-left">
+                  <a href="https://github.com/apfranzen/onpoint" class="btn btn-outline-primary btn-sm link repo-btn">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    repo
+                  </a>
+                </div>
+              </div> <!-- end project link btns -->
+            </div>
+          </div> <!-- end onpoint card -->
 
-          <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail">
-          <h4 class="subheading text-center">Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <!-- start a-cycle card -->
+          <div class="card portfolio-item" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/a-cycle-large.png" alt="Card image cap">
+            <div class="card-block">
+              <h1 class="card-title">a-cycle</h1>
+              <p class="card-text">A full stack platform for construction companies, built to increase transparency and accuracy on large projects by using WiFi fingerprinting. The user takes a photo on their phone or tablet, and onpoint does the rest, automatically attaching the room the picture was taken in to the picture’s metadata using machine learning.</p>
+
+              <!-- project link btns -->
+              <div class="row">
+                <div class="col-lg-6 text-left">
+                  <a href="http://adamfranzen.com/onpoint" class="btn btn-outline-primary btn-sm link deployed-btn">
+                    <i class="fa fa-rocket" aria-hidden="true"></i>
+                    deployed
+                  </a>
+                </div>
+                <div class="col-lg-6 text-left">
+                  <a href="https://github.com/apfranzen/onpoint" class="btn btn-outline-primary btn-sm link repo-btn">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    repo
+                  </a>
+                </div>
+              </div> <!-- end project link btns -->
+            </div>
+          </div> <!-- end a-cycle card -->
         </div>
 
         <div class="col-lg-6">
-          <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail">
-          <h4 class="subheading text-center">A-Cycle</h4>
-          <p>App to fill lacking functionality in the official B-Cycle app by returning the nearest B-Cycle bicycle sharing station with a bicycle available to rent</p>
+          <!-- start Anglers card -->
+          <div class="card portfolio-item" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/anglers_large.png" alt="Card image cap">
+            <div class="card-block">
+              <h1 class="card-title">Anglers</h1>
+              <p class="card-text">Anglers across Colorado now have the ability to view current fishing conditions including weather and river flow as well as leave tips for fellow anglers.</p>
 
-          <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail">
-          <h4 class="subheading text-center">G-Restaurants</h4>
-          <p>A Yelp-inspired, full-stack group project to help find good eats. Built in 4 days using server side templating and sessions authentication middleware for Node.js.</p>
+              <!-- project link btns -->
+              <div class="row">
+                <div class="col-lg-6 text-left">
+                  <a href="https://ancient-basin-31517.herokuapp.com/" class="btn btn-outline-primary btn-sm link deployed-btn">
+                    <i class="fa fa-rocket" aria-hidden="true"></i>
+                    deployed
+                  </a>
+                </div>
+                <div class="col-lg-6 text-left">
+                  <a href="https://github.com/apfranzen/Anglers" class="btn btn-outline-primary btn-sm link repo-btn">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    repo
+                  </a>
+                </div>
+              </div> <!-- end project link btns -->
+            </div>
+          </div> <!-- end Anglers card -->
 
-          <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail">
-          <h4 class="subheading text-center">Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <!-- start G-Restaurants card -->
+          <div class="card portfolio-item" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/g-restaurants-large.png" alt="Card image cap">
+            <div class="card-block">
+              <h1 class="card-title">G-Restaurants</h1>
+              <p class="card-text">A Yelp-inspired, full-stack group project to help find good eats. Built in 4 days using server side templating and sessions authentication middleware for Node.js</p>
+
+              <!-- project link btns -->
+              <div class="row">
+                <div class="col-lg-6 text-left">
+                  <a href="https://peaceful-wave-34154.herokuapp.com/" class="btn btn-outline-primary btn-sm link deployed-btn">
+                    <i class="fa fa-rocket" aria-hidden="true"></i>
+                    deployed
+                  </a>
+                </div>
+                <div class="col-lg-6 text-left">
+                  <a href="https://github.com/apfranzen/galvanize-restaurants" class="btn btn-outline-primary btn-sm link repo-btn">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    repo
+                  </a>
+                </div>
+              </div> <!-- end project link btns -->
+            </div>
+          </div> <!-- end Anglers card -->
+
         </div>
-      </div>
+        </div>
+        <h1 class="display-3 text-center" id="contact">contact</h1>
+
+        <ul>
+          <li><a href="mailto:adamfranzen+contact@gmail.com"><span class="fa fa-envelope"></span> adamfranzen+contact@gmail.com</a></li>
+          <li><a href="https://www.github.com/apfranzen"><span class="fa fa-github"></span> /apfranzen</a></li>
+          <li><a href="https://linkedin.com/in/apfranzen"><span class="fa fa-linkedin"></span> /apfranzen</a></li>
+        </ul>
+
+
 
       <footer class="footer">
         <p>&copy; Adam Franzen 2017</p>
       </footer>
 
-    </div> <!-- /container -->
+      </div> <!-- /container -->
+
     <!-- scripts -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <!-- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-4/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
