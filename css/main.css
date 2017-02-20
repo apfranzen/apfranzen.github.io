@@ -32,8 +32,12 @@ p {
 }
 
 .portfolio-item {
-  height: 550px;
+  /*height: 550px;*/
   margin-bottom: 20px;
+}
+
+.card-text {
+  margin-top: 15px;
 }
 
 a {
