@@ -12,6 +12,13 @@ $(document).on('ready', () => {
       $(this).addClass('active')
   });
 
+  $('.toggle-info').click(function(){
+    console.log('toggle-info hit');
+    $(this).text(function(i,old){
+        return old=='Less info' ?  'More info' : 'Less info';
+    });
+  });
+
 
 });
 
