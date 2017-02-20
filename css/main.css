@@ -51,12 +51,12 @@ a {
 }
 
 .deployed-btn {
-  margin-left: 18px;
+  margin-bottom: 8px;
 }
 
-.repo-btn {
+/*.repo-btn {
   margin-right: 18px;
-}
+}*/
 
 .hr-dashed {
 	background-color: #fff;
