@@ -1,6 +1,13 @@
 // jquery test
 $(document).on('ready', () => {
-  console.log('sanity check!');
+  // console.log('sanity check!');
+
+  $('#nav li a').click(function() {
+    // console.log('hit');
+      var $this = $(this);
+      $('li a.active').removeClass('active');
+      $(this).addClass('active')
+  });
 });
 
 // es6 test
